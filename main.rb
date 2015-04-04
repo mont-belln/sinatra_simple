@@ -11,3 +11,6 @@ end
 get '/example' do
   erb :example
 end
+post '/' do
+  p params["ex_text"]
+end
