@@ -13,6 +13,13 @@
 		id="ex_text"></textarea>
       <input type="submit" name="submit" value="submit">
     </form>
+
+    <% posts.each do |post| %>
+    <div>
+      
+      <%= escape_html post["text"] %>
+    </div>
+    <% end %>
   </div> 
   <script src="/js/main.js"></script>
 </body>
